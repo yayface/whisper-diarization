@@ -420,7 +420,7 @@ def get_speaker_aware_transcript(sentences_speaker_mapping, f):
 
 
 def format_timestamp(
-    milliseconds: float, always_include_hours: bool = False, decimal_marker: str = "."
+    milliseconds: float, always_include_hours: bool = True, decimal_marker: str = ","
 ):
     assert milliseconds >= 0, "non-negative timestamp expected"
 
@@ -448,8 +448,8 @@ def write_srt(transcript, file):
         # write srt lines
         print(
             f"{i}\n"
-            f"{format_timestamp(segment['start_time'], always_include_hours=True, decimal_marker=',')} --> "
-            f"{format_timestamp(segment['end_time'], always_include_hours=True, decimal_marker=',')}\n"
+            f"{format_timestamp(segment['start_time'])} --> "
+            f"{format_timestamp(segment['end_time'])}\n"
             f"{segment['speaker']}: {segment['text'].strip().replace('-->', '->')}\n",
             file=file,
             flush=True,
