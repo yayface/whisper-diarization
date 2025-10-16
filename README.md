@@ -71,6 +71,9 @@ python diarize.py -a AUDIO_FILE_NAME
 ## 향후 개선 사항
 - SRT에 대한 문장당 최대 길이 구현
 
+## 실행 시 오류 사항 대처
+pytorch 버전 문제가 발생 할 수 있다. 이 경우에는 https://pytorch.kr/get-started/compatibility/ 를 참고하여 버전을 맞춰야 한다.
+
 ## 감사의 말
 Special Thanks for [@adamjonas](https://github.com/adamjonas) for supporting this project
 This work is based on [OpenAI's Whisper](https://github.com/openai/whisper) , [Faster Whisper](https://github.com/guillaumekln/faster-whisper) , [Nvidia NeMo](https://github.com/NVIDIA/NeMo) , and [Facebook's Demucs](https://github.com/facebookresearch/demucs)
