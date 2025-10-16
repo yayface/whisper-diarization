@@ -71,7 +71,7 @@ python diarize.py -a AUDIO_FILE_NAME
 ## 향후 개선 사항
 - SRT에 대한 문장당 최대 길이 구현
 
-## Acknowledgements
+## 감사의 말
 Special Thanks for [@adamjonas](https://github.com/adamjonas) for supporting this project
 This work is based on [OpenAI's Whisper](https://github.com/openai/whisper) , [Faster Whisper](https://github.com/guillaumekln/faster-whisper) , [Nvidia NeMo](https://github.com/NVIDIA/NeMo) , and [Facebook's Demucs](https://github.com/facebookresearch/demucs)
 
